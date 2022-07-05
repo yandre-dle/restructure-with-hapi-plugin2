@@ -1,0 +1,30 @@
+class NotesHandler {
+  constructor(service) {
+    this._service = service;
+  }
+ 
+  postNoteHandler(request, h) {
+    /** kode disembunyikan */
+  }
+ 
+  getNotesHandler() {
+    /** kode disembunyikan */
+  }
+ 
+  getNoteByIdHandler(request, h) {
+    /** kode disembunyikan */
+  }
+ 
+  putNoteByIdHandler(request, h) {
+    /** kode disembunyikan */
+  }
+ 
+  deleteNoteByIdHandler(request) {
+    const { id } = request.params;
+    this._service.deleteNoteById(id);
+    return {
+      status: 'success',
+      message: 'Catatan berhasil dihapus',
+    }
+  }
+}

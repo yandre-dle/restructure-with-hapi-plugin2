@@ -1,0 +1,21 @@
+class NotesHandler {
+  constructor(service) {
+    this._service = service;
+  }
+ 
+  postNoteHandler(request, h) {
+    /** kode disembunyikan */
+  }
+ 
+  getNotesHandler() {
+    const notes = this._service.getNotes();
+    return {
+      status: 'success',
+      data: {
+        notes,
+      },
+    };
+  }
+ 
+  /** kode disembunyikan */
+}

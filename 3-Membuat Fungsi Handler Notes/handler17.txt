@@ -1,0 +1,39 @@
+class NotesHandler {
+  constructor(service) {
+    this._service = service;
+  }
+ 
+  postNoteHandler(request, h) {
+    /** kode disembunyikan */
+  }
+ 
+  getNotesHandler() {
+    /** kode disembunyikan */
+  }
+ 
+  getNoteByIdHandler(request, h) {
+   /** kode disembunyikan */
+  }
+ 
+  putNoteByIdHandler(request, h) {
+    try {
+      const { id } = request.params;
+ 
+      this._service.editNoteById(id, request.payload);
+ 
+      return {
+        status: 'success',
+        message: 'Catatan berhasil diperbarui',
+      };
+    } catch (error) {
+      const response = h.response({
+        status: 'fail',
+        message: error.message,
+      });
+      response.code(404);
+      return response;
+    }
+  }
+ 
+  /** kode disembunyikan */
+}

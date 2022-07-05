@@ -1,0 +1,25 @@
+class NotesHandler {
+  constructor(service) {
+    this._service = service;
+  }
+ 
+  postNoteHandler(request, h) {
+    /** kode disembunyikan */
+  }
+ 
+  getNotesHandler() {
+    /** kode disembunyikan */
+  }
+ 
+  getNoteByIdHandler(request, h) {
+    /** kode disembunyikan */
+  }
+ 
+  putNoteByIdHandler(request) {
+    const { id } = request.params;
+ 
+    this._service.editNoteById(id, request.payload);
+  }
+ 
+  /** kode disembunyikan */
+}

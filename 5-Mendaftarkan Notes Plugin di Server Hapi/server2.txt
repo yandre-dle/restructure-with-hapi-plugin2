@@ -1,0 +1,9 @@
+/** kode disembunyikan */
+ 
+const init = async () => {
+  const notesService = new NotesService();
+ 
+  /** kode disembunyikan */
+};
+ 
+init();
