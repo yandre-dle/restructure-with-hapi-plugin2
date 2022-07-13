@@ -1,2 +1,0 @@
-const note = this._notes.filter((n) => n.id === id)[0];
-

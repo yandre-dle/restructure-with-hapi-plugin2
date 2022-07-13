@@ -1,5 +1,0 @@
-class NotesHandler {
-  constructor(service) {
- 
-  }
-}
